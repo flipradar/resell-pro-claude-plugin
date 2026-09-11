@@ -1,0 +1,19 @@
+{
+  "name": "resell-pro",
+  "displayName": "Resell Pro",
+  "version": "1.0.0",
+  "description": "Research observed Vinted market data with Resell Pro.",
+  "author": {
+    "name": "Resell Pro",
+    "email": "hello@resellpro.com"
+  },
+  "homepage": "https://resellpro.com/tools/mcp",
+  "repository": "https://github.com/flipradar/resell-pro-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "vinted",
+    "resale",
+    "market-research",
+    "analytics"
+  ]
+}
