@@ -15,5 +15,8 @@
     "resale",
     "market-research",
     "analytics"
-  ]
+  ],
+  "logo": "assets/logo.png",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
 }
