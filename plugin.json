@@ -1,6 +1,6 @@
 {
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "resell-pro",
-  "displayName": "Resell Pro",
   "version": "1.0.1",
   "description": "Research observed Vinted market data with Resell Pro.",
   "author": {

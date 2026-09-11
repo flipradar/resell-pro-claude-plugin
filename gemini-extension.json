@@ -1,0 +1,13 @@
+{
+  "name": "resell-pro",
+  "version": "1.0.1",
+  "description": "Research observed Vinted market data with Resell Pro.",
+  "mcpServers": {
+    "resell-pro": {
+      "httpUrl": "https://resellpro.com/mcp",
+      "oauth": {
+        "enabled": true
+      }
+    }
+  }
+}

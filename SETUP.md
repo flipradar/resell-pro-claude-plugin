@@ -1,14 +1,15 @@
 # Resell Pro connection setup
 
-The plugin configures the Resell Pro remote MCP server at
-`https://resellpro.com/mcp`. When Claude asks to connect, use the standard
+The package configures the Resell Pro remote MCP server at
+`https://resellpro.com/mcp`. When your client asks to connect, use the standard
 OAuth authorization flow in the browser.
 
-1. Open the authorization page that Claude presents.
+1. Open the authorization page that your client presents.
 2. Sign in to Resell Pro or create an account at
    [resellpro.com](https://resellpro.com).
 3. Review the requested access and approve it only if it is expected.
-4. Return to Claude and confirm that the `resell-pro` MCP server is connected.
+4. Return to your client and confirm that the `resell-pro` MCP server is
+   connected.
 
 Do not ask for, paste, save, or transmit a password, API key, access token,
 cookie, OAuth authorization code, or other secret in chat or configuration.

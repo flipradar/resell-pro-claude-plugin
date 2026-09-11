@@ -1,10 +1,19 @@
-# Resell Pro for Claude Code and Cowork
+# Resell Pro for Claude Code, Cursor, and Gemini CLI
 
-Resell Pro connects Claude to read-only, observed Vinted market analytics. Use
-it to get a market overview, compare brands, research keyword niches, and find
-recent country-specific trends.
+Resell Pro connects compatible AI clients to read-only, observed Vinted market
+analytics. Use it to get a market overview, compare brands, research keyword
+niches, and find recent country-specific trends.
 
 ## Install and connect
+
+| Client | Package entry point | Setup |
+| --- | --- | --- |
+| Claude Code and Cowork | `.claude-plugin/plugin.json` | Install from Claude's plugin directory once listed. |
+| Cursor | `.cursor-plugin/plugin.json` | Install from Cursor's plugin marketplace once listed, or load a local clone for development. |
+| Gemini CLI | `gemini-extension.json` | Install the public GitHub repository as an extension. |
+| Agent Plugins clients | `plugin.json` and `mcp.json` | Install using the client's Agent Plugins workflow. |
+
+### Claude Code and Cowork
 
 Once this plugin is listed in the Anthropic directory, install **Resell Pro**
 from Claude's plugin directory. The plugin automatically configures the remote
@@ -26,8 +35,34 @@ claude --plugin-dir /path/to/resell-pro-claude-plugin
 Claude Code 2.1.128 or newer can also load the release ZIP directly:
 
 ```sh
-claude --plugin-dir /path/to/resell-pro-claude-plugin-1.0.0.zip
+claude --plugin-dir /path/to/resell-pro-claude-plugin-1.0.1.zip
 ```
+
+### Cursor
+
+Install **Resell Pro** from the Cursor Marketplace once it is listed. For local
+development, link a checkout into Cursor's local plugin directory, then reload
+the Cursor window and confirm the plugin in **Customize**:
+
+```sh
+mkdir -p ~/.cursor/plugins/local
+ln -s /path/to/resell-pro-claude-plugin ~/.cursor/plugins/local/resell-pro
+```
+
+Cursor loads the included skills and connects to `https://resellpro.com/mcp`.
+Complete the normal browser OAuth flow when prompted.
+
+### Gemini CLI
+
+Install the extension from this public repository:
+
+```sh
+gemini extensions install https://github.com/flipradar/resell-pro-claude-plugin
+```
+
+Restart Gemini CLI after installation. If authentication is needed, run
+`/mcp auth resell-pro` inside Gemini CLI and complete the normal browser OAuth
+flow.
 
 ## Supported MCP tools
 
