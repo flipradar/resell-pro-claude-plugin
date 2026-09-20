@@ -2,7 +2,7 @@
 
 Resell Pro connects compatible AI clients to read-only, observed Vinted market
 analytics. Use it to get a market overview, compare brands, research keyword
-niches, and find recent country-specific trends.
+niches, find recent country-specific trends, and browse individual observed sold listings.
 
 ## Install and connect
 
@@ -35,7 +35,7 @@ claude --plugin-dir /path/to/resell-pro-claude-plugin
 Claude Code 2.1.128 or newer can also load the release ZIP directly:
 
 ```sh
-claude --plugin-dir /path/to/resell-pro-claude-plugin-1.0.1.zip
+claude --plugin-dir /path/to/resell-pro-claude-plugin-1.1.0.zip
 ```
 
 ### Cursor
@@ -72,9 +72,15 @@ flow.
 | `compare_brands` | Optional `period_days` (7–90), `country`, `query`, `sort` | Brand-level observed sales, revenue, prices, unique sellers, and short-term momentum. |
 | `analyze_market_segment` | `keywords`, optional `country`, optional `period_days` (7, 14, or 30) | Keyword-niche observed sales, sold prices, time to sell, active listings, and sell-through. |
 | `discover_market_trends` | Optional `country` | Tracked breakout keywords, brands, and categories for one country. |
+| `search_sold_items` | Required `sold_observed_from` and `sold_observed_to`; optional `keywords`, `brand`, `category`, `country`, `sort`, `limit`, `offset` | Individual observed sold listings with dates, prices and links. Up to 50 per call; unfiltered windows up to 168 hours, filtered windows up to 90 days. |
 
-The included skills are `/resell-pro:niche-research`,
+The included skills are `/resell-pro:latest-sales`, `/resell-pro:niche-research`,
 `/resell-pro:compare-brands`, and `/resell-pro:market-trends`.
+
+For example: "Show the 20 latest observed Nike sales in France", or
+"Find iPhones observed sold last calendar week in France, excluding accessories".
+The latest-sales skill resolves an explicit observation window and returns
+listing prices and links without claiming exact transaction times or paid amounts.
 
 ## Interpretation and limits
 
