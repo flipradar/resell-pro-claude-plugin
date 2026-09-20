@@ -1,8 +1,8 @@
 {
   "name": "resell-pro",
   "displayName": "Resell Pro",
-  "version": "1.0.1",
-  "description": "Research observed Vinted market data with Resell Pro.",
+  "version": "1.1.0",
+  "description": "Find recent observed Vinted sales, compare brands, and research resale markets with Resell Pro.",
   "author": {
     "name": "Resell Pro",
     "email": "hello@resellpro.com"
