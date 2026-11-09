@@ -94,6 +94,12 @@ does not estimate missing data. If a response includes `demo.sample_data: true`,
 it is representative sample data only and must not guide real sourcing or
 pricing decisions.
 
+A free Resell Pro account includes 50 tool calls per calendar month (UTC).
+Once they are used, tools return `code: free_quota_reached` with an upgrade
+link and the reset date instead of results; relay the link and do not estimate
+the missing data. Resell Pro Max has no monthly limit. All accounts are also
+limited to 30 tool calls per minute.
+
 This plugin contains no hooks, scripts, embedded secrets, or telemetry code.
 
 ## Help and policies
