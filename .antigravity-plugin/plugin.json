@@ -1,0 +1,28 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "resell-pro",
+  "displayName": "Resell Pro",
+  "version": "1.1.0",
+  "description": "Analyze observed Vinted sales, compare brands, research product niches, and discover resale market trends across 23 European countries with Resell Pro.",
+  "logo": "assets/logo.png",
+  "suggestedPrompts": [
+    "Which brands gained the most momentum on Vinted in France over the last 30 days?",
+    "Compare Nike and Adidas observed sales and median prices over the last 90 days.",
+    "Show the 20 latest observed Carhartt sales in France and summarize typical prices."
+  ],
+  "author": {
+    "name": "Resell Pro",
+    "email": "hello@resellpro.com",
+    "url": "https://resellpro.com"
+  },
+  "homepage": "https://resellpro.com/tools/mcp",
+  "repository": "https://github.com/flipradar/resell-pro-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "vinted",
+    "resale",
+    "market-research",
+    "analytics",
+    "ecommerce"
+  ]
+}
