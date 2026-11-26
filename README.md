@@ -1,5 +1,7 @@
 # Resell Pro for Claude Code, Cursor, Antigravity, and Gemini CLI
 
+[![Resell Pro MCP connector](https://glama.ai/mcp/connectors/io.github.flipradar/resell-pro/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.flipradar/resell-pro)
+
 Resell Pro connects compatible AI clients to read-only, observed Vinted market
 analytics. Use it to get a market overview, compare brands, research keyword
 niches, find recent country-specific trends, and browse individual observed sold listings.
