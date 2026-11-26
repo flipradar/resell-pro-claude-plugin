@@ -8,6 +8,7 @@
     "email": "hello@resellpro.com"
   },
   "homepage": "https://resellpro.com/tools/mcp",
+  "privacyPolicyUrl": "https://resellpro.com/mcp/privacy",
   "repository": "https://github.com/flipradar/resell-pro-claude-plugin",
   "license": "MIT",
   "keywords": [
