@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flipradar/resell-pro",
+  "title": "Resell Pro",
+  "description": "Observed Vinted market analytics: sold listings, brand comparisons, niche research, and trends.",
+  "version": "1.1.0",
+  "websiteUrl": "https://resellpro.com/tools/mcp",
+  "repository": {
+    "url": "https://github.com/flipradar/resell-pro-claude-plugin",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://resellpro.com/mcp"
+    }
+  ]
+}
