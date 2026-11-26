@@ -1,4 +1,4 @@
-# Resell Pro for Claude Code, Cursor, and Gemini CLI
+# Resell Pro for Claude Code, Cursor, Antigravity, and Gemini CLI
 
 Resell Pro connects compatible AI clients to read-only, observed Vinted market
 analytics. Use it to get a market overview, compare brands, research keyword
@@ -8,10 +8,30 @@ niches, find recent country-specific trends, and browse individual observed sold
 
 | Client | Package entry point | Setup |
 | --- | --- | --- |
+| Antigravity | `.antigravity-plugin/plugin.json` and `mcp_config.json` | Install from the Antigravity Marketplace once listed, or install directly from this GitHub repository with `agy plugin install`. |
 | Claude Code and Cowork | `.claude-plugin/plugin.json` | Install from Claude's plugin directory once listed. |
 | Cursor | `.cursor-plugin/plugin.json` | Install from Cursor's plugin marketplace once listed, or load a local clone for development. |
 | Gemini CLI | `gemini-extension.json` | Install the public GitHub repository as an extension. |
 | Agent Plugins clients | `plugin.json` and `mcp.json` | Install using the client's Agent Plugins workflow. |
+
+### Antigravity
+
+Once this plugin is listed in the Antigravity Marketplace, install **Resell Pro**
+from **Customizations > Marketplace** in the Antigravity App or run:
+
+```sh
+agy plugin install resell-pro@antigravity-plugins-partners
+```
+
+You can also install directly from this public GitHub repository:
+
+```sh
+agy plugin install https://github.com/flipradar/resell-pro-claude-plugin
+```
+
+Antigravity loads the included skills and connects to `https://resellpro.com/mcp`
+using OAuth 2.0 with Client ID Metadata Documents (CIMD) and PKCE. Complete the
+normal browser OAuth flow when prompted under **Customizations > Installed**.
 
 ### Claude Code and Cowork
 
